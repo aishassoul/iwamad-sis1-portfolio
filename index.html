@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aisha Kuantay's personal portfolio and web development projects.">
+  <title>Aisha Kuantay | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#about">Aisha Kuantay</a>
+
+    <nav aria-label="Main navigation">
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="theme-toggle" type="button" aria-pressed="false">
+      Switch to dark mode
+    </button>
+  </header>
+
+  <main>
+    <section id="about" class="about-section">
+      <p class="eyebrow">IT MANAGEMENT STUDENT</p>
+      <h1>Hi, I'm Aisha.</h1>
+      <p>
+        I'm an IT Management student at KBTU interested in business
+        analytics, technology, and digital products. I enjoy learning
+        how technology can solve real problems and make everyday
+        experiences better.
+      </p>
+    </section>
+
+    <section id="projects" class="projects-section">
+      <p class="eyebrow">WHAT I'VE BEEN WORKING ON</p>
+      <h2>My Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Personal Profile Card</h3>
+          <p>
+            A profile card built with HTML and CSS to practise layout,
+            typography, and visual hierarchy.
+          </p>
+          <a href="https://github.com/aishassoul/iwamad-practice"
+             target="_blank" rel="noopener noreferrer">
+            View project
+          </a>
+        </article>
+
+        <article class="project-card">
+          <h3>Interactive Portfolio</h3>
+          <p>
+            A responsive React website with a working like button,
+            reusable UI components, and a skills section.
+          </p>
+          <a href="https://aishassoul.github.io/iwamad-practice/"
+             target="_blank" rel="noopener noreferrer">
+            View live website
+          </a>
+        </article>
+
+        <article class="project-card">
+          <h3>Data Analysis Practice</h3>
+          <p>
+            A collection of data analysis exercises using Python,
+            pandas, data cleaning, grouping, and visualisation.
+          </p>
+          <a href="https://github.com/aishassoul"
+             target="_blank" rel="noopener noreferrer">
+            View GitHub profile
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2>Contact Me</h2>
+      <p>
+        Have a project idea or want to connect? Send me a message
+        using the form below.
+      </p>
+
+      <form id="contact-form" novalidate>
+        <div class="form-field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text"
+                 autocomplete="name" required>
+          <p class="field-error" id="name-error"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email"
+                 autocomplete="email" required>
+          <p class="field-error" id="email-error"></p>
+        </div>
+
+        <div class="form-field">
+          <label for="message">Your message</label>
+          <textarea id="message" name="message"
+                    rows="5" required></textarea>
+          <p class="field-error" id="message-error"></p>
+        </div>
+
+        <button type="submit">Send message</button>
+        <p id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Aisha Kuantay · Built with HTML, CSS and JavaScript.</p>
+  </footer>
+</body>
+</html>
